@@ -1,46 +1,45 @@
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+<!-- BACKGROUND LAYER (Visuals only) -->
+<div class="background-layer">
+  <div class="aura-bg"></div>
+  <div id="floating-container"></div>
+  <div id="sparkle-container"></div>
+</div>
 
-<div class="aura-bg"></div>
-<div id="floating-container"></div>
-<div id="sparkle-container"></div>
-<div id="heart-burst" class="heart-burst">❤️</div>
-
-<div class="main-container">
+<!-- INTERACTION LAYER (Button and Card) -->
+<div class="ui-layer">
+  
+  <div id="heart-burst" class="heart-burst">❤️</div>
   
   <button id="openBtn">I love you</button>
 
- 
   <div class="card-frame" id="birthdayCard">
     <div class="card-header">
       <div class="sub-header">A Valentine's Miracle</div>
       <h1>Arushi</h1>
-      <p class="short-message">Born on the 14th of February. My whole heart and my forever Valentine.</p>
-      <div class="luxury-divider">✦</div>
+      <p class="short-msg">Born on the 14th of February. My whole heart.</p>
+      <div class="divider">✦</div>
     </div>
 
-    <div class="poem-viewport" id="scrollArea">
-      <div id="poemContainer" class="poem-content">
-        
-        <p class="poem-line"><span class="first-letter">H</span>aving a love like yours, so rare and so fine,</p>
-        <p class="poem-line"><span class="first-letter">B</span>orn on the fourteenth, a legendary day.</p>
-        <p class="poem-line"><span class="first-letter">D</span>arling, you're perfect, my heart's deep delight.</p>
-        
-        <div class="spacer"></div>
-
-       
-        <p class="poem-line"><span class="first-letter">A</span>ll of my dreams found a home in your eyes,</p>
-        <p class="poem-line"><span class="first-letter">R</span>adiant angel, my life's greatest prize.</p>
-        <p class="poem-line"><span class="first-letter">U</span>nder the stars or the bright morning sun,</p>
-        <p class="poem-line"><span class="first-letter">S</span>weetheart, I promise that you are the one.</p>
-        <p class="poem-line"><span class="first-letter">H</span>eartbeat of mine, you're the soul of my days,</p>
-        <p class="poem-line"><span class="first-letter">I</span>'ll love you forever, in all of my ways.</p>
-      </div>
+    <div class="poem-area" id="scrollArea">
+      <!-- H B D ARUSHI -->
+      <div class="poem-line"><span class="letter">H</span>aving a love like yours, so rare and so fine,</div>
+      <div class="poem-line"><span class="letter">B</span>orn on the fourteenth, a legendary day.</div>
+      <div class="poem-line"><span class="letter">D</span>arling, you're perfect, my heart's deep delight.</div>
+      <div class="spacer"></div>
+      <div class="poem-line"><span class="letter">A</span>ll of my dreams found a home in your eyes,</div>
+      <div class="poem-line"><span class="letter">R</span>adiant angel, my life's greatest prize.</div>
+      <div class="poem-line"><span class="letter">U</span>nder the stars or the bright morning sun,</div>
+      <div class="poem-line"><span class="letter">S</span>weetheart, I promise that you are the one.</div>
+      <div class="poem-line"><span class="letter">H</span>eartbeat of mine, you're the soul of my days,</div>
+      <div class="poem-line"><span class="letter">I</span>'ll love you forever, in all of my ways.</div>
     </div>
 
     <div class="card-footer">
       <div id="final-msg" class="final-wishes">Happy Birthday, Arushi. ❤️</div>
-      <button id="replayBtn">Replay the Magic</button>
+      <button id="replayBtn">Replay Magic</button>
     </div>
   </div>
 </div>
