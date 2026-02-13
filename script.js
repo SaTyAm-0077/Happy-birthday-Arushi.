@@ -8,10 +8,11 @@ const scrollArea = document.getElementById('scrollArea');
 
 
 const myPics = [
-  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./d99534d27c560a208a8ad912f248671def43a704/54b66a61-8b35-4c43-be62-468240aa79af.jpg", 
-  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./d99534d27c560a208a8ad912f248671def43a704/ca451672-9246-4e61-8e6e-293ef3832fbd.jpg", 
-  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./d99534d27c560a208a8ad912f248671def43a704/f0e0bcb2-5bcf-4313-9d8e-3b3257ab8049.jpg",
-  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./d99534d27c560a208a8ad912f248671def43a704/cbcc58d4-40ad-468a-9ed9-27bb1ac70a07.jpg"
+  "cbcc58d4-40ad-468a-9ed9-27bb1ac70a07.jpg"
+"54b66a61-8b35-4c43-be62-468240aa79af.jpg"
+"ca451672-9246-4e61-8e6e-293ef3832fbd.jpg"
+"f4934f9d-27dd-4c1d-aa08-dbff7c53064d.jpg"
+"f0e0bcb2-5bcf-4313-9d8e-3b3257ab8049.jpg"
 ];
 const bgWords = ["Arushi", "I love you", "Baby", "Soulmate", "Valentine", "Beautiful", "My Whole Heart"];
 
