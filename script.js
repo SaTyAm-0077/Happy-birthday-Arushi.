@@ -5,16 +5,21 @@ const poemLines = document.querySelectorAll('.poem-line');
 const floatContainer = document.getElementById('floating-container');
 const scrollArea = document.getElementById('scrollArea');
 
-// --- 1. SETTINGS ---
-// IMPORTANT: Upload the 5 photos you sent to GitHub as pic1.jpg, pic2.jpg, etc.
-const myPics = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
-const bgWords = ["Arushi", "I love you", "Baby", "Soulmate", "Valentine", "Beautiful", "My Whole Heart"];
+// --- 1. SETTINGS (RAW HTTPS LINKS) ---
+const myPics = [
+  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./main/54b66a61-8b35-4c43-be62-468240aa79af.jpg",
+  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./main/ca451672-9246-4e61-8e6e-293ef3832fbd.jpg",
+  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./main/f0e0bcb2-5bcf-4313-9d8e-3b3257ab8049.jpg",
+  "https://raw.githubusercontent.com/SaTyAm-0077/Happy-birthday-Arushi./main/cbcc58d4-40ad-468a-9ed9-27bb1ac70a07.jpg"
+];
 
-// Use your Dropbox link (ensure it ends in raw=1)
+const bgWords = ["Arushi", "I love you", "Baby", "Soulmate", "Mine Forever", "Valentine", "Beautiful", "Everything"];
+
+// Your Dropbox Music
 const audio = new Audio('https://www.dropbox.com/scl/fi/349z8putdic1ltab78lpj/Yiruma_-_River_Flows_in_You_48kbps.mp3?rlkey=x9tt24bvhbmkn33xovvnafsd5&st=bz1myrjm&raw=1');
 audio.loop = true;
 
-// --- 2. TRAIL & SPARKLES ---
+// --- 2. GOLD TRAIL LOGIC ---
 function createTrail(x, y) {
   const t = document.createElement('div');
   t.className = 'trail';
@@ -44,12 +49,12 @@ setInterval(() => {
   setTimeout(() => el.remove(), dur * 1000);
 }, 3000);
 
-// --- 4. REVEAL ---
+// --- 4. THE REVEAL ---
 btn.addEventListener('click', () => {
   btn.style.opacity = '0';
   setTimeout(() => btn.style.display = 'none', 500);
   heart.classList.add('heart-animate');
-  audio.play();
+  audio.play().catch(e => console.log(e));
   confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, colors: ['#ffde59', '#ff4d6d'] });
   setTimeout(() => {
     card.classList.add('reveal-frame');
